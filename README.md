@@ -9,6 +9,8 @@ Papers:
 4. Neural Tangent Kernel: Convergence and Generation in Neural Networks
 
 
-Code: 
-1. Neural UCB methods 
+Code:   
+1. Linear UCB methods   
+2. Neural UCB methods 
+
 
