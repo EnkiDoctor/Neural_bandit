@@ -12,5 +12,5 @@ Papers:
 Code:   
 1. Linear UCB methods   
 2. Neural UCB methods 
-
+3. Neural_LinUCB
 
