@@ -10,6 +10,7 @@ print(datetime.datetime.now().strftime("%d%B%Y, %H:%M:%S"))
 device = torch.device('cuda')
 
 # data loader
+# 返回对象维context_size, arm_size, context, reward, sli(排序)
 def load_data(dataset_name, K):
     if dataset_name == "statlog":
         ##statlog
@@ -99,7 +100,8 @@ def load_data(dataset_name, K):
     REWARD = TEMP_REWARD
 
     return __context_size__, __arm_size__, CONTEXT, REWARD, sli
-
+ 
+# Initialization，利用kronecker product初始化参数，详见p5
 def INI(dim):  
     #### initialization
     #### dim consists of (d1, d2,...), where dl = 1 (placeholder, deprecated)
@@ -121,8 +123,7 @@ def INI(dim):
 
     return w, total_dim
 
-
-
+# 模拟神经网络的输出
 def FUNC_FE(x, W):  
     #### Functions feature extractor
     #### x is the input, dimension is d; W is the list of parameter matrices
@@ -130,11 +131,10 @@ def FUNC_FE(x, W):
     output = x
     for i in range(0, depth - 1):
         output = torch.mm(W[i], output)
-        output = output.clamp(min=0)
+        output = output.clamp(min=0) # relu激活函数
 
     output = output * math.sqrt(W[depth - 1].size()[1])
     return output
-
 
 def GRAD_LOSS(X, Y, W, THETA):
     ##return a list of grad, satisfying that W[i] = W[i] - grad[i] ##for single context x
@@ -153,7 +153,7 @@ def GRAD_LOSS(X, Y, W, THETA):
 
     THETA_t = torch.transpose(THETA,0,1).view(num_sample, 1, -1)
     output_t = torch.transpose(output,0,1).view(num_sample, -1, 1)
-    output = torch.bmm(THETA_t, output_t).squeeze().view(1,-1)
+    output = torch.bmm(THETA_t, output_t).squeeze().view(1,-1)      
 
     loss.append(output)
     ####
@@ -192,7 +192,6 @@ def loss(X, Y, W, THETA):
 
     summ = (Y - output_y).pow(2).sum() / num_sample
     return summ
-
 
 def TRAIN_SE(X, Y, W_start, T, et, THETA, H):  
     #### gd-based model training with shallow exploration
