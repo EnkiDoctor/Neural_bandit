@@ -1,0 +1,134 @@
+PS E:\gitproject\Neural_bandit\code> & D:/anaconda/envs/bandit/python.exe e:/gitproject/Neural_bandit/code/run_demo.py
+05September2023, 20:27:58
+Namespace(lambd=1, et=0.0001, beta=0.02, H_q=100, K=15000, interT=1000, hidden_dim=[1000, 1000], filePath='./result_figs/', dataset='statlog')
+32.0
+------ tensor(0.0066, dtype=torch.float64)
+47.0
+------ tensor(0.0134, dtype=torch.float64)
+54.0
+------ tensor(0.0121, dtype=torch.float64)
+58.0
+------ tensor(0.0096, dtype=torch.float64)
+------ tensor(0.0086, dtype=torch.float64)
+------ tensor(0.0084, dtype=torch.float64)
+60.0
+------ tensor(0.0075, dtype=torch.float64)
+------ tensor(0.0046, dtype=torch.float64)
+------ tensor(0.0041, dtype=torch.float64)
+61.0
+------ tensor(0.0111, dtype=torch.float64)
+------ tensor(0.0095, dtype=torch.float64)
+------ tensor(0.0092, dtype=torch.float64)
+------ tensor(0.0091, dtype=torch.float64)
+65.0
+------ tensor(0.0180, dtype=torch.float64)
+------ tensor(0.0150, dtype=torch.float64)
+------ tensor(0.0141, dtype=torch.float64)
+------ tensor(0.0135, dtype=torch.float64)
+------ tensor(0.0132, dtype=torch.float64)
+------ tensor(0.0129, dtype=torch.float64)
+------ tensor(0.0127, dtype=torch.float64)
+67.0
+------ tensor(0.0102, dtype=torch.float64)
+70.0
+------ tensor(0.0112, dtype=torch.float64)
+------ tensor(0.0108, dtype=torch.float64)
+73.0
+------ tensor(0.0148, dtype=torch.float64)
+75.0
+------ tensor(0.0085, dtype=torch.float64)
+------ tensor(0.0073, dtype=torch.float64)
+77.0
+------ tensor(0.0035, dtype=torch.float64)
+------ tensor(0.0025, dtype=torch.float64)
+78.0
+------ tensor(0.0037, dtype=torch.float64)
+------ tensor(0.0026, dtype=torch.float64)
+79.0
+------ tensor(0.0037, dtype=torch.float64)
+------ tensor(0.0021, dtype=torch.float64)
+79.0
+------ tensor(0.0037, dtype=torch.float64)
+------ tensor(0.0023, dtype=torch.float64)
+79.0
+------ tensor(0.0030, dtype=torch.float64)
+------ tensor(0.0017, dtype=torch.float64)
+80.0
+------ tensor(0.0032, dtype=torch.float64)
+------ tensor(0.0024, dtype=torch.float64)
+82.0
+------ tensor(0.0032, dtype=torch.float64)
+------ tensor(0.0017, dtype=torch.float64)
+82.0
+------ tensor(0.0044, dtype=torch.float64)
+------ tensor(0.0023, dtype=torch.float64)
+83.0
+------ tensor(0.0078, dtype=torch.float64)
+------ tensor(0.0068, dtype=torch.float64)
+85.0
+------ tensor(0.0041, dtype=torch.float64)
+------ tensor(0.0026, dtype=torch.float64)
+85.0
+------ tensor(0.0024, dtype=torch.float64)
+------ tensor(0.0012, dtype=torch.float64)
+86.0
+------ tensor(0.0037, dtype=torch.float64)
+------ tensor(0.0019, dtype=torch.float64)
+87.0
+------ tensor(0.0019, dtype=torch.float64)
+------ tensor(0.0009, dtype=torch.float64)
+88.0
+------ tensor(0.0081, dtype=torch.float64)
+88.0
+------ tensor(0.0026, dtype=torch.float64)
+89.0
+------ tensor(0.0027, dtype=torch.float64)
+90.0
+------ tensor(0.0092, dtype=torch.float64)
+------ tensor(0.0079, dtype=torch.float64)
+91.0
+------ tensor(0.0022, dtype=torch.float64)
+------ tensor(0.0011, dtype=torch.float64)
+91.0
+------ tensor(0.0017, dtype=torch.float64)
+------ tensor(0.0007, dtype=torch.float64)
+91.0
+------ tensor(0.0034, dtype=torch.float64)
+------ tensor(0.0015, dtype=torch.float64)
+91.0
+------ tensor(0.0017, dtype=torch.float64)
+91.0
+------ tensor(0.0024, dtype=torch.float64)
+------ tensor(0.0010, dtype=torch.float64)
+93.0
+------ tensor(0.0071, dtype=torch.float64)
+------ tensor(0.0060, dtype=torch.float64)
+94.0
+------ tensor(0.0019, dtype=torch.float64)
+95.0
+------ tensor(0.0022, dtype=torch.float64)
+95.0
+------ tensor(0.0024, dtype=torch.float64)
+------ tensor(0.0007, dtype=torch.float64)
+95.0
+------ tensor(0.0022, dtype=torch.float64)
+97.0
+------ tensor(0.0025, dtype=torch.float64)
+98.0
+------ tensor(0.0021, dtype=torch.float64)
+100.0
+------ tensor(0.0090, dtype=torch.float64)
+101.0
+------ tensor(0.0015, dtype=torch.float64)
+102.0
+------ tensor(0.0020, dtype=torch.float64)
+102.0
+------ tensor(0.0022, dtype=torch.float64)
+
+
+
+
+
+
+
+

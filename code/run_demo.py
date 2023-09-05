@@ -1,4 +1,6 @@
 import os
+
+os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 import numpy as np
 import torch
 import math
@@ -7,7 +9,7 @@ import random
 import argparse
 import datetime
 print(datetime.datetime.now().strftime("%d%B%Y, %H:%M:%S"))
-device = torch.device('cuda')
+device = torch.device('cpu')
 
 # data loader
 # 返回对象维context_size, arm_size, context, reward, sli(排序)
@@ -26,7 +28,7 @@ def load_data(dataset_name, K):
             K+=1
             aaa = line.split("\n")
             aaa = aaa[0].split(" ")
-            temp = np.int(aaa[9])-1
+            temp = np.int64(aaa[9])-1
             context = np.double(aaa[1:9])
             context = context/np.linalg.norm(context)
             ttt = context
@@ -229,12 +231,11 @@ def TRAIN_SE(X, Y, W_start, T, et, THETA, H):
 def UCB(A, phi):
     #### ucb term
     try:
-        tmp, LU = torch.solve(phi,A)
+        tmp, LU = torch.linalg.solve(phi,A)
     except:
         tmp = torch.Tensor(np.linalg.solve(A, phi))
 
-    return torch.sqrt(torch.mm(torch.transpose(phi,0,1), tmp))
-
+    return torch.sqrt(torch.mm(torch.transpose(phi,0,1), tmp.double()))
 
 def TRANS(c, a, arm_size):
     #### transfer an array context + action to new context with dimension 2*(__context__ + __armsize__)
@@ -307,7 +308,8 @@ def main(args):
         # update LAMBDA and bb
         LAMBDA += torch.mm(FUNC_FE(bphi[a_choose], W), FUNC_FE(bphi[a_choose], W).t())
         bb += reward * FUNC_FE(bphi[a_choose], W)
-        theta, LU = torch.solve(bb,LAMBDA)
+        #theta, LU = torch.linalg.solve(bb,LAMBDA)
+        theta = torch.linalg.solve(LAMBDA, bb)
 
         if np.mod(t, args.H_q) == 0:
             THETA_action = []
