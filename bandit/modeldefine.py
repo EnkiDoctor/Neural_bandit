@@ -31,6 +31,8 @@ class Model(nn.Module):
     def forward(self, x):
         for layer in self.layers:
             x = layer(x)
+        # x multiply by output_size
+        x = x * self.output_size
         return x
     
     def initialize_weights(self):
