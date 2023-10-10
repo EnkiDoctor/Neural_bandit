@@ -1,0 +1,4 @@
+几个小问题想请教一下：
+1.  assortment selectiom 中的rivi是否为直接相乘，亦或是 exponential，这个oracle的出处
+2.  神经网络的训练是否为 revenue和 reward的 mse loss
+3.  theta 的更新为 minimize mle还是直接计算二级结论
