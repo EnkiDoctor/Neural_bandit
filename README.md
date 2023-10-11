@@ -2,7 +2,7 @@
 This is a repo for research of Du Junye in terms of Neural Bandit under assortment settings
 
 ### Algorithm description
-![Alt text](readme_fig/alo_fig.png)
+![Alt text](readme_fig/3fig.png)
 ### Papers for reference:
 1. Neural Contextual bandits with deep representation and shallow exploration
 2. Thompson Sampling for Multinomial Logit Contextual Bandit
@@ -12,7 +12,7 @@ This is a repo for research of Du Junye in terms of Neural Bandit under assortme
 
 ### *Temporary to-do list:*   
 ### *Code:*   
-1. Linear UCB methods    
+1. Linear UCB methods    s
 2. Neural UCB methods 
 3. Neural_LinUCB   
 4. Neural_linUCB experiment on real-world dataset
