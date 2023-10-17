@@ -1,5 +1,7 @@
 # Neural contextual bandit project  
-This is a repo for research of Du Junye in terms of Neural Bandit under assortment settings
+This is a repo for research purpose of Du Junye in terms of Neural Bandit under assortment settings.  
+  
+*Supervisor:* Dr. Yang Yu and Mr. Zhang Hongbin
 
 ### Algorithm description
 ![Alt text](readme_fig/3fig.png)
