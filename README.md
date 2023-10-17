@@ -12,11 +12,12 @@ This is a repo for research of Du Junye in terms of Neural Bandit under assortme
 
 ### *Temporary to-do list:*   
 ### *Code:*   
-1. Linear UCB methods    s
-2. Neural UCB methods 
-3. Neural_LinUCB   
-4. Neural_linUCB experiment on real-world dataset
-5. MLE optimization part
-6. Integrate into assortment selection 
-7. Neural_Assort_LinUCB experiment on dataset
+- Linear UCB methods     &#10004;
+-  Neural UCB methods   &#10004;
+-  Neural_LinUCB   &#10004;
+-  Neural_linUCB experiment on real-world dataset  &#10004;
+-  MLE optimization part   &#10004;
+-  Generating simulation dataset   
+-  Integrate into assortment selection 
+-  Neural_Assort_LinUCB experiment on real-world dataset
 
