@@ -23,4 +23,3 @@ This is a repo for research purpose of Du Junye in terms of Neural Bandit under 
 -  Generating simulation dataset   
 -  Integrate into assortment selection 
 -  Neural_Assort_LinUCB experiment on real-world dataset
-
