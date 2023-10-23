@@ -21,5 +21,6 @@ This is a repo for research purpose of Du Junye in terms of Neural Bandit under 
 -  MLE optimization part   &#10004;
 -  Self define neural network loss and backward propogation &#10004;
 -  Generating simulation dataset    &#10004;
--  Integrate into assortment selection 
+-  MLE optimization and SGD   &#10004; 
+-  Integrate into assortment selection  
 -  Neural_Assort_LinUCB experiment on real-world dataset
