@@ -24,3 +24,6 @@ This is a repo for research purpose of Du Junye in terms of Neural Bandit under 
 -  MLE optimization and SGD  &#10004;
 -  Integrate into assortment selection  &#10004;
 -  Neural_Assort_LinUCB experiment on real-world dataset  &#10004;
+-  Generate Non-linear DataSet
+-  Modify Neural Network
+-  
