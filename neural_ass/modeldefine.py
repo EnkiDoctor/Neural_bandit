@@ -92,3 +92,39 @@ class Model(nn.Module):
             if isinstance(layer, nn.Linear):
                 layer.weight.data = w[idx]
                 idx += 1
+
+
+
+
+
+class Model_drop(nn.Module):
+    def __init__(self, input_size, hidden_size, output_size, num_layers):
+       
+        super(Model_drop, self).__init__()
+
+        self.input_size = input_size
+        self.hidden_size = hidden_size
+        self.output_size = output_size
+        self.num_layers = num_layers
+
+        self.layers = nn.ModuleList() 
+        
+        self.layers.append(nn.Linear(input_size, hidden_size))
+        self.layers.append(nn.ReLU())
+        self.layers.append(nn.Dropout(p=0.3))
+
+        for _ in range(num_layers - 1):
+            self.layers.append(nn.Linear(hidden_size, hidden_size))
+            self.layers.append(nn.ReLU())
+            self.layers.append(nn.Dropout(p=0.3))
+
+        self.layers.append(nn.Linear(hidden_size, output_size))
+        self.layers.append(nn.ReLU())
+
+    def forward(self, x):
+        for layer in self.layers:
+            x = layer(x)
+        # x multiply by output_size
+        x = x * np.sqrt(self.output_size)
+        return x
+    
