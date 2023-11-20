@@ -26,3 +26,7 @@ This is a repo for research purpose of Du Junye in terms of Neural Bandit under 
 -  Neural_Assort_LinUCB experiment on real-world dataset  &#10004;
 -  Generate Non-linear DataSet &#10004;
 -  Modify Neural Network and Hperfining &#10004;
+
+
+### Result figure
+![Alt text](readme_fig/linear_output_1000.png)
