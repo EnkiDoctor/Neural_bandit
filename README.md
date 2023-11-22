@@ -33,7 +33,10 @@ This is a repo for research purpose of Du Junye in terms of Neural Bandit under 
 ![Alt text](readme_fig/linear_output_1000.png)
 
 ### Non_linear mapping: Sigmoid(X) @ TRUE_THETA.T
-![Alt text](readme_fig/nonlinear_output_10000.png)
+
+<center class="half">
+    <img src="readme_fig/nonlinear_output_10000.png" width="350"/><img src="readme_fig/nonlinear_mle_baseline.png" width="350"/>
+</center>
 
 ### Relu mapping: ReLU(X)@ TRUE_THETA.T
 ![Alt text](readme_fig/relu_output_2000.png)
