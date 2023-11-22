@@ -36,7 +36,7 @@ This is a repo for research purpose of Du Junye in terms of Neural Bandit under 
 
 
 <div align="center">
-   <img src="readme_fig/nonlinear_output_10000.png"  height=600><img src="readme_fig/nonlinear_mle_baseline.png" height=600>
+   <img src="readme_fig/nonlinear_output_10000.png"  height=550><img src="readme_fig/nonlinear_mle_baseline.png" height=550>
 </div>
 
 
